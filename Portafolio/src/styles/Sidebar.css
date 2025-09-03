@@ -1,16 +1,26 @@
 .custom-sidebar {
   position: fixed;
   left: 0;
-  height: calc(100vh - 2vh);
   z-index: 2000;
-  background-color: #2d3748 !important;
   transition: all 0.3s ease;
+  
 }
 .overlay {
   position: fixed;
   left: 0;
   width: 100%;
-  height: calc(100vh - 2vh);
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+}
+
+
+.pro-sidebar > .pro-sidebar-inner {
+  background-color: #093864 !important; 
+  background-image: none !important; 
+}
+
+
+.pro-sidebar .pro-menu-item, 
+.pro-sidebar .pro-sub-menu > .pro-inner-item {
+  color: white !important;
 }

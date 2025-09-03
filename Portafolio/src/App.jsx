@@ -9,9 +9,9 @@ export default function App() {
 
   return (
     <div className="app-layout">
-      <Sidebar onCollapse={setCollapsed} />
+      <Header />
       <div className={`right-section ${collapsed ? "collapsed" : ""}`}>
-        <Header />
+        <Sidebar onCollapse={setCollapsed} />
         <MainContent />
       </div>
     </div>

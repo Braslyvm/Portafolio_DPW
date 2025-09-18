@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import {  FaBook,FaUser, FaBars } from "react-icons/fa";
+import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { FaBook, FaUser, FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom"; // <-- Esto faltaba
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/base.css";
 import "../styles/layout.css";
@@ -8,9 +9,7 @@ import "../styles/overrides.css";
 import "../styles/components.css";
 
 export default function Sidebar({ onCollapse }) {
-
   const [collapsed, setCollapsed] = useState(true);
-
 
   const handleToggle = () => {
     const newState = !collapsed;
@@ -29,13 +28,15 @@ export default function Sidebar({ onCollapse }) {
           <MenuItem icon={<FaBars />} onClick={handleToggle}>
             {collapsed ? "Abrir" : "Cerrar"}
           </MenuItem>
-          <MenuItem icon={<FaUser />}>Perfil</MenuItem>
-          <MenuItem icon={< FaBook />}>Cursos</MenuItem>
+          <MenuItem icon={<FaUser />}>
+            <Link to="/perfil">Perfil</Link>
+          </MenuItem>
+          <MenuItem icon={<FaBook />}>
+            <Link to="/cursos">Cursos</Link>
+          </MenuItem>
         </Menu>
       </ProSidebar>
-      {!collapsed && (
-        <div className="overlay" onClick={handleToggle}></div>
-      )}
+      {!collapsed && <div className="overlay" onClick={handleToggle}></div>}
     </>
   );
 }

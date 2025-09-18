@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
 import MainContent from "./components/MainContent";
-import "./App.css";
+import "./styles/base.css";
+import "./styles/layout.css";
+import "./styles/overrides.css";
+import "./styles/components.css";
+
 
 export default function App() {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
+
 
   return (
     <div className="app-layout">
-      <Header />
-      <div className={`right-section ${collapsed ? "collapsed" : ""}`}>
-        <Sidebar onCollapse={setCollapsed} />
+      <Sidebar onCollapse={setCollapsed} />
+      <div className={`right-section ${collapsed ? "collapsed" : "expanded"}`}>
         <MainContent />
       </div>
     </div>

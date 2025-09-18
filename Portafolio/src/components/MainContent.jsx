@@ -1,5 +1,8 @@
 import React from "react";
-import "../styles/MainContent.css";
+import "../styles/base.css";
+import "../styles/layout.css";
+import "../styles/overrides.css";
+import "../styles/components.css";
 
 export default function MainContent() {
   return (

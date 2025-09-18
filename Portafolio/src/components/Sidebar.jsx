@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import {  FaBook,FaUser, FaBars } from "react-icons/fa";
 import "react-pro-sidebar/dist/css/styles.css";
-import "../styles/Sidebar.css";
+import "../styles/base.css";
+import "../styles/layout.css";
+import "../styles/overrides.css";
+import "../styles/components.css";
 
 export default function Sidebar({ onCollapse }) {
+
   const [collapsed, setCollapsed] = useState(true);
+
 
   const handleToggle = () => {
     const newState = !collapsed;
@@ -18,7 +23,7 @@ export default function Sidebar({ onCollapse }) {
       <ProSidebar
         collapsed={collapsed}
         className={`custom-sidebar ${collapsed ? "collapsed" : "expanded"}`}
-        style={{ height: "100vh" }}
+        style={{ height: "98vh" }}
       >
         <Menu iconShape="square">
           <MenuItem icon={<FaBars />} onClick={handleToggle}>

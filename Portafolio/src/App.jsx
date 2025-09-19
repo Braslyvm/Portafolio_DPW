@@ -4,6 +4,8 @@ import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 import Perfil from "./components/Perfil";
 import Cursos from "./components/Cursos";
+import DetallesCurso from "./components/DetallesCurso";
+
 import "./styles/base.css";
 import "./styles/layout.css";
 import "./styles/overrides.css";
@@ -21,6 +23,7 @@ export default function App() {
             <Route path="/" element={<MainContent />} />
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/cursos" element={<Cursos />} />
+            <Route path="/curso/:codigo" element={<DetallesCurso />} />
           </Routes>
         </div>
       </div>

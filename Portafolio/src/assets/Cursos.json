@@ -22,18 +22,18 @@
             {
                 "nombre": "Lab 1",
                 "tipo": "Laboratorio",
-                "descripcion": "Desarrollo de un portafolio personal utilizando React para mostrar habilidades, proyectos y experiencia.",
+                "descripcion": "Documentacion tecnica de markdown",
                 "fechaEntrega": "10/08/2025",
-                "tecnologias": ["React", "CSS", "JavaScript"],
+                "tecnologias": ["markdown"],
                 "repositorio": "https://github.com/Braslyvm/desarrollo-moderno-BraslyVM",
-                "sitioDesplegado": "hhttps://twmlaboratorio.netlify.app/"
+                "sitioDesplegado": "https://twmlaboratorio.netlify.app/"
             },
             {
                 "nombre": "Lab 2",
                 "tipo": "Laboratorio",
-                "descripcion": "Desarrollo de un portafolio personal utilizando React para mostrar habilidades, proyectos y experiencia.",
+                "descripcion": "Aplicacion de elementos parte de HTML",
                 "fechaEntrega": "16/08/2025 ",
-                "tecnologias": ["React", "CSS", "JavaScript"],
+                "tecnologias": ["htmal"],
                 "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
                 "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
             } 
@@ -47,8 +47,10 @@
         "Grupo": "60",
         "Profesor": "Ing. Cristian Paz Campos Aguero",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descripcion": "Profundiza en SQL, diseño y gestión de bases de datos relacionales"   
+        "descripcion": "Profundiza en SQL, diseño y gestión de bases de datos relacionales",
+        "trabajos": []
         },
+        
         {
         "codigo": "IC4700",
         "nombre": "Lenguajes de programación",
@@ -57,7 +59,8 @@
         "Grupo": "60",
         "Profesor": "Ing. Allan Rodriguez Davila",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descripcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"    
+        "descripcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"   ,
+        "trabajos": [] 
         },
         {
         "codigo": "CS3401",
@@ -67,7 +70,8 @@
         "Grupo": "60",
         "Profesor": "Mauricio Cedeño Camacho ",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descripcion": "Reflexión crítica sobre enfoques filosóficos e históricos aplicados al pensamiento científico y social."    
+        "descripcion": "Reflexión crítica sobre enfoques filosóficos e históricos aplicados al pensamiento científico y social."  ,
+        "trabajos": []  
         },
         {
         "codigo": "IC6400",
@@ -77,7 +81,8 @@
         "Grupo": "60",
         "Profesor": "Ing. Jean Carlos Miranda Fajardo",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descripcion": "Introducción a modelos matemáticos y técnicas de optimización para la toma de decisiones en sistemas complejos."    
+        "descripcion": "Introducción a modelos matemáticos y técnicas de optimización para la toma de decisiones en sistemas complejos." ,
+        "trabajos": []   
         },
         {
         "codigo": "SE1400",
@@ -87,7 +92,8 @@
         "Grupo": "60",
         "Profesor": "Alex Eduardo Serrano Solano",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descripcion": "Estudio y análisis del cine como expresión artística y medio cultural."    
+        "descripcion": "Estudio y análisis del cine como expresión artística y medio cultural."    ,
+        "trabajos": []
         }
         
     ]

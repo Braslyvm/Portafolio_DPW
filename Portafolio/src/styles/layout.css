@@ -62,12 +62,27 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height:75vh;
+  height:70vh;
   gap:10px;
   box-sizing: border-box;
   justify-content: center;  
   overflow-y: auto; 
 }
+
+.separacion {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 2vh;
+  background: var(--sider);
+  gap: 0.625rem;    
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: 2px solid #ccc; 
+  padding: 0.25rem;   
+  margin: 1rem; 
+}
+
 
 .main-header {
   color: var(--accent);

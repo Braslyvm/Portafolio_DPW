@@ -8,6 +8,7 @@ export default function Cursos() {
     <main className="content">
       <div className="Sup-contenedor">
          <h1 className="main-header">Trabajos academicos</h1>
+          <div className="separacion"></div>
          <div className="cursos-Container"> 
           {materias.map((materia, index) => (
             <div key={index} className="curso-card">

@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: var(--background);
+  overflow-y: auto; 
 }
 .app-layout {
   display: flex;
@@ -24,13 +25,13 @@ body {
 
 }
 :root {
-  --background: #0d1b2a;   /* fondo principal oscuro y profesional */
-  --sider: #1b263b;        /* color sidebar o elementos laterales */
-  --accent: #415a77;       /* detalles, bordes y hover */
-  --block-bg: #778da9;     /* color de bloques o tarjetas */
-  --light-bg: #e0e1dd;     /* fondo claro para contenedores y secciones */
-  --text-dark: #0d1b2a;    /* texto principal oscuro */
-  --text-light: #e0e1dd;   /* subtítulos o textos claros */
+  --background: #0d1b2a;  
+  --sider: #1b263b;      
+  --accent: #415a77;    
+  --block-bg: #778da9;   
+  --light-bg: #e0e1dd;    
+  --text-dark: #0d1b2a;  
+  --text-light: #e0e1dd;   
 }
 
 

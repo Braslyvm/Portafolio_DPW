@@ -1,0 +1,54 @@
+{
+  "Bienvenida": {
+    "Titulo": "¡Bienvenido a mi Portafolio!",
+    "Titulo2": "¡Hola! Soy Brasly",
+    "Presentacion": "Soy estudiante de la carrera de Ingeniería en Informática en la sede de Limón del Tecnológico. Me apasiona la programación y siempre estoy aprendiendo nuevas herramientas para crear soluciones tecnológicas innovadoras.",
+    "Presentacion2": "Además de la tecnología, me gustan los deportes y disfrutar de actividades que me mantienen activo y motivado. Este portafolio es un espacio donde comparto mi trabajo, proyectos y mi forma de aprender y crecer en el mundo del desarrollo web.",
+    "TituloProposito": "Propósito de este Portafolio",
+    "Proposito": "Este portafolio está diseñado para mostrar mis habilidades, proyectos y la forma en que aplico mis conocimientos en desarrollo web. Quiero que cada visitante pueda conocer mi estilo de trabajo, mi creatividad y mi enfoque para resolver problemas mediante soluciones tecnológicas efectivas."
+  },
+  "Redes": {
+    "Instagram": "https://www.instagram.com/brasly_68?igsh=MWNieWRhZ3pmODJ3cw==",
+    "GitHub": "https://github.com/Braslyvm",
+    "LinkedIn": "https://www.linkedin.com/in/brasly-villarebia-morales-749628343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+
+  "informacionPersonal": {
+    "nombreCompleto": "Brasly Villarebia Morales",
+    "biografia": "Soy estudiante de Ingeniería en Computación en el Instituto Tecnológico de Costa Rica, apasionado por la programación, el desarrollo de software y el aprendizaje constante de nuevas tecnologías. Me interesa especialmente expandir mis conocimientos en áreas como ciberseguridad, bases de datos y desarrollo web moderno. Busco crecer como profesional en distintas ramas del software, explorando soluciones innovadoras y prácticas que puedan tener un impacto real. Me motiva participar en proyectos colaborativos y desafiantes, contribuir a la comunidad tecnológica mediante iniciativas open source y mantenerme siempre actualizado con las últimas tendencias en programación y desarrollo de aplicaciones.",
+    "contacto": {
+      "email": "braslymorales@gamil.com",
+      "telefono": "+506 6450-5214",
+      "ubicacion": "Cariari, Limón, Costa Rica"
+    },
+    "habilidadesTecnicas": {
+      "Lenguajes de Programación": [
+        { "nombre": "JavaScript", "nivel": "Intermedio" },
+        { "nombre": "Python", "nivel": "Intermedio" },
+        { "nombre": "Java", "nivel": "Intermedio" },
+        { "nombre": "C#", "nivel": "Básico" }
+      ],
+      "Desarrollo Web": [
+        { "nombre": "HTML5", "nivel": "Intermedio" },
+        { "nombre": "React", "nivel": "Intermedio" },
+        { "nombre": "Node.js", "nivel": "Básico" }
+      ],
+      "Herramientas": [
+        { "nombre": "GitHub", "nivel": "Intermedio" },
+        { "nombre": "VS Code", "nivel": "Intermedio" },
+        { "nombre": "Linux", "nivel": "Básico" }
+      ]
+    },
+    "redesProfesionales": {
+      "linkedin": "https://www.linkedin.com/in/brasly-villarebia-morales-749628343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "github": "https://github.com/Braslyvm"
+    },
+    "informacionAdicional": [
+      "Apasionado por la programación y el desarrollo web moderno",
+      "Interesado en la creación de aplicaciones web con React y Node.js",
+      "Aprendizaje constante de nuevas tecnologías y herramientas de desarrollo",
+      "Trabajo colaborativo y buenas prácticas de programación"
+    ]
+  }
+
+}

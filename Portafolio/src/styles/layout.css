@@ -47,14 +47,14 @@
 
 .Sup-contenedor {
   width: 100%;
-  height: 100%;
+  height: 96vh;
   padding: 20px;
   box-sizing: border-box;
    background-color: var(--light-bg);
   border-radius: 8px; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow-y: auto;
-  
+  overflow-x: hidden;
+  overflow-y: scroll; 
 }
 
 
@@ -146,4 +146,149 @@
 .social-card svg {
   margin-bottom: 0.5vh;
   font-size: 4vh;
+}
+
+
+.perfil-arriba {
+  display: flex;
+  gap: 3vw; 
+  flex-wrap: wrap;
+}
+
+
+.perfil-columna-izq {
+  flex: 1 1 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh; 
+}
+
+
+.perfil-columna-der {
+  flex: 2 1 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.perfil-foto {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1vh 1.5vh rgba(0,0,0,0.1);
+}
+
+
+.perfil-bio h3 {
+  margin: 0 0 0.8vh 0;
+  font-size: 2.5vh;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.perfil-bio p {
+  margin: 0.5vh 0;
+  font-size: 2vh;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.perfil-habilidades h3 {
+  font-size: 2.2vh;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.8vh;
+}
+
+.habilidades-categorias {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh; 
+}
+
+.categoria h4 {
+  font-size: 1.8vh;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.lista-habilidades {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+
+.lista-habilidades li {
+  background-color: #f2f2f2;
+  border-radius: 1vh;
+  padding: 0.8vh 1.5vw;
+  font-size: 1.8vh;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lista-habilidades li:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+
+.perfil-redes h3 {
+  font-size: 2vh;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5vh;
+}
+
+.perfil-redes ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.perfil-redes li a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 1.8vh;
+}
+
+.perfil-redes li a:hover {
+  color: var(--accent);
+}
+
+
+.perfil-abajo {
+  width: 100%;
+  padding: 1.5vh 2vw;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.perfil-abajo h3 {
+  margin-bottom: 0.5vh;
+  font-size: 2vh;
+  color: var(--text-dark);
+}
+
+.perfil-abajo ul {
+  list-style: disc;
+  padding-left: 2.5vw;
+  margin: 0;
+  font-size: 1.8vh;
+  color: var(--text-muted);
 }

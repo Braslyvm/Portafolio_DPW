@@ -1,5 +1,9 @@
 import React from "react";
 import data from "../assets/Cursos.json"; 
+import "../styles/base.css";
+import "../styles/layout.css";
+import "../styles/overrides.css";
+import "../styles/components.css";
 
 
 export default function Cursos() {

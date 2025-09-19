@@ -1,0 +1,57 @@
+{
+    "cursos": [
+        {
+        "codigo": "IC8057",
+        "nombre": "Introducción al Desarrollo de Páginas Web",
+        "semestre": "Semestre 7",
+        "descrpcion": "Aprende a crear sitios web funcionales y responsivos usando HTML, CSS y JavaScript",
+        "Tipos": ["Proyecto", "Laboratorio", "Portafolio"],
+        "trabajos": [
+            {
+                "nombre": "Portafolio#1",
+                "tipo": "Portafolio",
+                "descripcion": "Desarrollo de un portafolio personal utilizando React para mostrar habilidades, proyectos y experiencia.",
+                "fechaEntrega": "19/09/2025",
+                "tecnologias": ["React", "CSS", "JavaScript"],
+                "repositorio": "https://github.com/Braslyvm/Portafolio_DPW",
+                "sitioDesplegado": "https://miportafoliobvm.netlify.app/"
+            },
+            {
+                "nombre": "Lab 1",
+                "tipo": "Laboratorio",
+                "descripcion": "Desarrollo de un portafolio personal utilizando React para mostrar habilidades, proyectos y experiencia.",
+                "fechaEntrega": "10/08/2025",
+                "tecnologias": ["React", "CSS", "JavaScript"],
+                "repositorio": "https://github.com/Braslyvm/desarrollo-moderno-BraslyVM",
+                "sitioDesplegado": "hhttps://twmlaboratorio.netlify.app/"
+            },
+            {
+                "nombre": "Lab 2",
+                "tipo": "Laboratorio",
+                "descripcion": "Desarrollo de un portafolio personal utilizando React para mostrar habilidades, proyectos y experiencia.",
+                "fechaEntrega": "16/08/2025 ",
+                "tecnologias": ["React", "CSS", "JavaScript"],
+                "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
+                "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
+            } 
+        ]
+        },
+        {
+        "codigo": "IC4302",
+        "nombre": "Bases de datos II",
+        "semestre": "Semestre 4",
+        "Tipos": ["Proyecto", "Examen", "Tarea"],
+        "descrpcion": "Profundiza en SQL, diseño y gestión de bases de datos relacionales"   
+        },
+        {
+        "codigo": "IC4700",
+        "nombre": "Lenguajes de programación",
+        "semestre": "Semestre 4",
+        "Tipos": ["Proyecto", "Examen", "Tarea"],
+        "descrpcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"    
+        }
+    ]
+
+}
+
+

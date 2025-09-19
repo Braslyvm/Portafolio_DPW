@@ -58,7 +58,38 @@
         "Profesor": "Ing. Allan Rodriguez Davila",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
         "descripcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"    
+        },
+        {
+        "codigo": "CS3401",
+        "nombre": "Seminario de estudios filosóficos históricos",
+        "semestre": "Semestre 5",
+        "Creditos": 2,
+        "Grupo": "60",
+        "Profesor": "Mauricio Cedeño Camacho ",
+        "Tipos": ["Proyecto", "Examen", "Tarea"],
+        "descripcion": "Reflexión crítica sobre enfoques filosóficos e históricos aplicados al pensamiento científico y social."    
+        },
+        {
+        "codigo": "IC6400",
+        "nombre": "Investigación de operaciones",
+        "semestre": "Semestre 6",
+        "Creditos": 4,
+        "Grupo": "60",
+        "Profesor": "Ing. Jean Carlos Miranda Fajardo",
+        "Tipos": ["Proyecto", "Examen", "Tarea"],
+        "descripcion": "Introducción a modelos matemáticos y técnicas de optimización para la toma de decisiones en sistemas complejos."    
+        },
+        {
+        "codigo": "SE1400",
+        "nombre": "Apreciación de cine",
+        "semestre": "Semestre 3",
+        "Creditos": 0,
+        "Grupo": "60",
+        "Profesor": "Alex Eduardo Serrano Solano",
+        "Tipos": ["Proyecto", "Examen", "Tarea"],
+        "descripcion": "Estudio y análisis del cine como expresión artística y medio cultural."    
         }
+        
     ]
 
 }

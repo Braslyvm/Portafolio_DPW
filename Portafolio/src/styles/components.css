@@ -87,8 +87,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30vw;
-  height: 29vh;
+  width: 25vw;
+  height: 20vh;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 

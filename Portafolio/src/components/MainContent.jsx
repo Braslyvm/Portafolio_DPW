@@ -12,11 +12,11 @@ export default function MainContent() {
   return (
     <main className="content">
       <div className="Sup-contenedor">
-        <h2 className="main-header">{Bienvenida.Titulo}</h2>
+        <h1 className="main-header">{Bienvenida.Titulo}</h1>
         <div className="intro-container">
           <section className="intro-section">
             <div className="intro-text">
-              <h3 className="section-title">¡{Bienvenida.Titulo2}</h3>
+              <h2 className="section-title">¡{Bienvenida.Titulo2}</h2>
               <p className="section-text">
                 {Bienvenida.Presentacion}
               </p>
@@ -31,14 +31,13 @@ export default function MainContent() {
           </div>
         </div>
         <section className="purpose-section">
-          <h3 className="section-title">{Bienvenida.TituloProposito}</h3>
+          <h2 className="section-title">{Bienvenida.TituloProposito}</h2>
           <p className="section-text">
             {Bienvenida.Proposito}
           </p>
         </section>
-
         <section className="socials-section">
-          <h3 className="section-title">Mis Redes Sociales</h3>
+          <h2 className="section-title">Mis Redes Sociales</h2>
           <div className="socials-grid">
             <a href={Redes.Instagram} target="_blank" rel="noopener noreferrer" className="social-card">
               <FaInstagram size={40} />

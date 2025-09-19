@@ -1,10 +1,13 @@
 {
-    "cursos": [
+    "materias": [
         {
         "codigo": "IC8057",
         "nombre": "Introducción al Desarrollo de Páginas Web",
         "semestre": "Semestre 7",
-        "descrpcion": "Aprende a crear sitios web funcionales y responsivos usando HTML, CSS y JavaScript",
+        "Creditos": 3,
+        "Grupo": "60",
+        "Profesor": "Ing. Jean Anthony Vega Diaz ",
+        "descripcion": "Aprende a crear sitios web funcionales y responsivos usando HTML, CSS y JavaScript",
         "Tipos": ["Proyecto", "Laboratorio", "Portafolio"],
         "trabajos": [
             {
@@ -40,15 +43,21 @@
         "codigo": "IC4302",
         "nombre": "Bases de datos II",
         "semestre": "Semestre 4",
+        "Creditos": 3,
+        "Grupo": "60",
+        "Profesor": "Ing. Cristian Paz Campos Aguero",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descrpcion": "Profundiza en SQL, diseño y gestión de bases de datos relacionales"   
+        "descripcion": "Profundiza en SQL, diseño y gestión de bases de datos relacionales"   
         },
         {
         "codigo": "IC4700",
         "nombre": "Lenguajes de programación",
         "semestre": "Semestre 4",
+        "Creditos": 4,
+        "Grupo": "60",
+        "Profesor": "Ing. Allan Rodriguez Davila",
         "Tipos": ["Proyecto", "Examen", "Tarea"],
-        "descrpcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"    
+        "descripcion": "Explora diferentes paradigmas de programación y aplica conceptos prácticos en múltiples lenguajes"    
         }
     ]
 

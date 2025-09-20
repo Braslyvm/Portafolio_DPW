@@ -36,6 +36,15 @@
                 "tecnologias": ["htmal"],
                 "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
                 "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
+            },
+            {
+                "nombre": "Lab 6",
+                "tipo": "Laboratorio",
+                "descripcion": "Ejercicios de javascript",
+                "fechaEntrega": "19/09/2025",
+                "tecnologias": ["html"],
+                "repositorio": "https://github.com/Braslyvm/Lab6",
+                "sitioDesplegado": "null"
             } 
         ]
         },

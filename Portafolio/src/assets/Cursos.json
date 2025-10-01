@@ -37,6 +37,24 @@
                 "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
                 "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
             },
+             {
+                "nombre": "Lab 7",
+                "tipo": "Laboratorio",
+                "descripcion": " Presentacion de consumo de apis y realizar quiz",
+                "fechaEntrega": "26/08/2025 ",
+                "tecnologias": ["JavaScript"],
+                "repositorio":null,
+                "sitioDesplegado": null
+            },
+             {
+                "nombre": "Proyecto #1",
+                "tipo": "Proyecto",
+                "descripcion": "El proyecto consiste en desarrollar un prototipo web que simule una plataforma bancaria en línea, aplicando principios de usabilidad, accesibilidad y diseño responsive. ",
+                "fechaEntrega": "28/08/2025 ",
+                "tecnologias": ["htmal","JavaScript","css","TypeScript"],
+                "repositorio":"https://github.com/Braslyvm/PY_1_DPW",
+                "sitioDesplegado": "https://banconsfms.netlify.app/"
+            },
             {
                 "nombre": "Lab 6",
                 "tipo": "Laboratorio",
@@ -44,7 +62,7 @@
                 "fechaEntrega": "19/09/2025",
                 "tecnologias": ["html"],
                 "repositorio": "https://github.com/Braslyvm/Lab6",
-                "sitioDesplegado": "null"
+                "sitioDesplegado": null
             } 
         ]
         },

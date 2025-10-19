@@ -5,6 +5,7 @@ import MainContent from "./components/MainContent";
 import Perfil from "./components/Perfil";
 import Cursos from "./components/Cursos";
 import DetallesCurso from "./components/DetallesCurso";
+import Comentarios from "./components/Comentarios";
 
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/" element={<MainContent />} />
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/cursos" element={<Cursos />} />
+            <Route path="/Comentarios" element={<Comentarios />} />
             <Route path="/curso/:codigo" element={<DetallesCurso />} />
           </Routes>
         </div>

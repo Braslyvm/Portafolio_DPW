@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { FaBook, FaUser, FaBars , FaHome} from "react-icons/fa";
-import { Link } from "react-router-dom"; // <-- Esto faltaba
+import { FaBook, FaUser, FaBars , FaHome, FaRegComments} from "react-icons/fa";
+
+import { Link } from "react-router-dom"; 
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/base.css";
 import "../styles/layout.css";
@@ -36,6 +37,9 @@ export default function Sidebar({ onCollapse }) {
           </MenuItem>
           <MenuItem icon={<FaBook />}>
             <Link to="/cursos">Cursos</Link>
+          </MenuItem>
+          <MenuItem icon={<FaRegComments />}>
+            <Link to="/Comentarios">Comentarios</Link>
           </MenuItem>
         </Menu>
       </ProSidebar>

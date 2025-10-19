@@ -32,24 +32,30 @@ export default function DetallesCurso() {
             <div key={i} className="tipo-container">
               <h3 className="tipo-title">{tipo}</h3>
               <div className="trabajos-container">
-                {materia.trabajos.filter(trabajo => trabajo.tipo === tipo).length > 0 ? (
+                {materia.trabajos.filter(t => t.tipo === tipo).length > 0 ? (
                   materia.trabajos
-                    .filter(trabajo => trabajo.tipo === tipo)
+                    .filter(t => t.tipo === tipo)
                     .map((trabajo, j) => (
                       <div key={j} className="trabajo-card">
                         <h4>{trabajo.nombre}</h4>
                         <p>{trabajo.descripcion}</p>
                         <p><b>Fecha de entrega:</b> {trabajo.fechaEntrega}</p>
                         <p><b>Tecnologías:</b> {trabajo.tecnologias.join(", ")}</p>
-                        <p>
-                          <a href={trabajo.repositorio} target="_blank" rel="noreferrer">
-                            Repositorio
-                          </a>{" "}
-                          |{" "}
-                          <a href={trabajo.sitioDesplegado} target="_blank" rel="noreferrer">
-                            Sitio
-                          </a>
-                        </p>
+                        {(trabajo.repositorio || trabajo.sitioDesplegado) && (
+                          <p>
+                            {trabajo.repositorio && (
+                              <a href={trabajo.repositorio} target="_blank" rel="noreferrer">
+                                Repositorio
+                              </a>
+                            )}
+                            {trabajo.repositorio && trabajo.sitioDesplegado && " | "}
+                            {trabajo.sitioDesplegado && (
+                              <a href={trabajo.sitioDesplegado} target="_blank" rel="noreferrer">
+                                Sitio
+                              </a>
+                            )}
+                          </p>
+                        )}
                       </div>
                     ))
                 ) : (
@@ -62,6 +68,7 @@ export default function DetallesCurso() {
           ))}
         </div>
       </div>
+
       <Link to="/cursos" className="btn-volver">
         Volver a Cursos
       </Link>

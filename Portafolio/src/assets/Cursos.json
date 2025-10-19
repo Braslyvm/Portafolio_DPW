@@ -20,6 +20,15 @@
                 "sitioDesplegado": "https://miportafoliobvm.netlify.app/"
             },
             {
+                "nombre": "Portafolio#2",
+                "tipo": "Portafolio",
+                "descripcion": "Avance del portafolio personal con mejoras en el diseño y funcionalidad utilizando React.",
+                "fechaEntrega": "20/10/2025",
+                "tecnologias": ["React", "CSS", "JavaScript"],
+                "repositorio": "https://github.com/Braslyvm/Portafolio_DPW",
+                "sitioDesplegado": "https://miportafoliobvm.netlify.app/"
+            },
+            {
                 "nombre": "Lab 1",
                 "tipo": "Laboratorio",
                 "descripcion": "Documentacion tecnica de markdown",
@@ -38,12 +47,57 @@
                 "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
             },
              {
+                "nombre": "Lab 3",
+                "tipo": "Laboratorio",
+                "descripcion": "partir del Lab 2 y aplicar CSS avanzado al sitio del evento.",
+                "fechaEntrega": "25/08/2025",
+                "tecnologias": ["htmal"],
+                "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
+                "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
+            },
+             {
+                "nombre": "Lab 4",
+                "tipo": "Laboratorio",
+                "descripcion": "Diseño responsive y principios de accesibilidad, y quiz sobre los temas vistos.",
+                "fechaEntrega": "29/08/2025",
+                "tecnologias": ["htmal"],
+                "repositorio": null,
+                "sitioDesplegado": null
+            },
+             {
+                "nombre": "Lab 5",
+                "tipo": "Laboratorio",
+                "descripcion": "Al lab 3 aplicarle actividad “pulido Responsive”",
+                "fechaEntrega": "16/08/2025 ",
+                "tecnologias": ["htmal"],
+                "repositorio": "https://github.com/Braslyvm/Laboratorio_2_DPW",
+                "sitioDesplegado": "https://techskillsacademycr.netlify.app/"
+            },
+                        {
+                "nombre": "Lab 6",
+                "tipo": "Laboratorio",
+                "descripcion": "Ejercicios de javascript",
+                "fechaEntrega": "19/09/2025",
+                "tecnologias": ["html"],
+                "repositorio": "https://github.com/Braslyvm/Lab6",
+                "sitioDesplegado": null
+            },
+             {
                 "nombre": "Lab 7",
                 "tipo": "Laboratorio",
                 "descripcion": " Presentacion de consumo de apis y realizar quiz",
                 "fechaEntrega": "26/08/2025 ",
                 "tecnologias": ["JavaScript"],
                 "repositorio":null,
+                "sitioDesplegado": null
+            },
+            {
+                "nombre": "Lab 8",
+                "tipo": "Laboratorio",
+                "descripcion": "desarrollar una API REST en Node.js con Express que use archivos JSON como base de datos simulada.",
+                "fechaEntrega": "26/08/2025 ",
+                "tecnologias": ["JavaScript"],
+                "repositorio":"https://github.com/Braslyvm/Lab8",
                 "sitioDesplegado": null
             },
              {
@@ -54,16 +108,7 @@
                 "tecnologias": ["htmal","JavaScript","css","TypeScript"],
                 "repositorio":"https://github.com/Braslyvm/PY_1_DPW",
                 "sitioDesplegado": "https://banconsfms.netlify.app/"
-            },
-            {
-                "nombre": "Lab 6",
-                "tipo": "Laboratorio",
-                "descripcion": "Ejercicios de javascript",
-                "fechaEntrega": "19/09/2025",
-                "tecnologias": ["html"],
-                "repositorio": "https://github.com/Braslyvm/Lab6",
-                "sitioDesplegado": null
-            } 
+            }
         ]
         },
         {

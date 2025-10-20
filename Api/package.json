@@ -6,9 +6,14 @@
   "main": "Index.js",
   "scripts": {
     "start": "node Index.js",
+    "health": "node -e \"console.log('ok')\"",
     "build": "echo \"no build step\""
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
+    "@supabase/supabase-js": "^2.75.1",
     "cors": "^2.8.5",
     "express": "^5.1.0"
   }

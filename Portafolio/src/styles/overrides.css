@@ -204,8 +204,9 @@
   font-size: clamp(11px, 1.4vw, 12px);
 }
 
+
 @media (max-width: 480px) {
-  .cabecera h1 { font-size: 16px; }
+  .cabecera h1 { font-size: 14px; }
   .cabecera p { font-size: 11px; }
   .separador { width: 40px; height: 3px; }
 
@@ -214,11 +215,10 @@
     padding: 10px;
     border-radius: 8px;
   }
-
   .formulario { gap: 6px; }
   .formulario label { font-size: 11px; }
   .formulario input, .formulario textarea {
-    width: 90%;
+    width: 80%;
     padding: 8px 10px;
     font-size: 11px;
     border-radius: 7px;
@@ -267,4 +267,6 @@
   .fecha {
     font-size: 8px;     
   }
+  .formulario input, .formulario textarea {
+    width: 85%;}
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FaBook, FaUser, FaBars , FaHome, FaRegComments} from "react-icons/fa";
+import { MdOutlineSportsEsports } from "react-icons/md";
 
 import { Link } from "react-router-dom"; 
 import "react-pro-sidebar/dist/css/styles.css";
@@ -40,6 +41,9 @@ export default function Sidebar({ onCollapse }) {
           </MenuItem>
           <MenuItem icon={<FaRegComments />}>
             <Link to="/Comentarios">Comentarios</Link>
+          </MenuItem>
+          <MenuItem icon={<MdOutlineSportsEsports />}>
+            <Link to="/hobbies">Hobbies</Link>
           </MenuItem>
         </Menu>
       </ProSidebar>

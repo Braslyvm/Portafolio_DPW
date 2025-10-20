@@ -1,0 +1,28 @@
+{
+  "juego": {
+    "Titulo": "Videojuegos",
+    "Categoria": "Estrategia, RPG Y Aventuras",
+    "Descripcion": "Los videojuegos han sido una constante en mi vida. Me fascina sumergirme en mundos virtuales, enfrentar desafíos complejos y descubrir narrativas envolventes. Desde juegos de estrategia que exigen planificación hasta RPGs que requieren toma de decisiones críticas, cada género me enseña algo sobre resolución de problemas y pensamiento táctico.",
+    "supTitulo": "",
+    "Valor": "Jugar ha potenciado mi análisis rápido, pensamiento estratégico y adaptabilidad ante situaciones cambiantes. Muchos conceptos de diseño de juegos me inspiran al pensar en la experiencia del usuario al programar interfaces y sistemas, recordándome que la tecnología debe ser intuitiva y satisfactoria."
+},
+    "Deporte": {
+    "Titulo": "Deportes de Equipo",
+    "Categoria": "Balonmano, Voleibol Y Fútbol",
+    "Descripcion": "El deporte ha sido siempre una parte fundamental de mi vida. Practicar balonmano, voleibol y fútbol me ha enseñado el verdadero significado del trabajo en equipo, la comunicación efectiva y la toma de decisiones bajo presión. Cada partido es un ejercicio de estrategia donde debes anticipar movimientos, adaptarte rápidamente y confiar en tus compañeros.",
+    "Valor": "Estos deportes han desarrollado mi capacidad de colaboración, resiliencia ante el fracaso y pensamiento estratégico. En el desarrollo de software, como en un equipo deportivo, el éxito depende de la sincronización y del compromiso conjunto hacia un objetivo común.",
+    "supTitulo": "valor Profesional"
+ },
+    "programacion": {
+    "Titulo": "Programación",
+    "Categoria": "Proyectos personales",
+    "Descripcion": "Programar es más que mi carrera: es mi forma de crear y resolver problemas. Me apasiona explorar nuevas tecnologías, frameworks y lenguajes. Desde aplicaciones web hasta scripts de automatización, cada línea de código es una oportunidad para aprender y construir herramientas que faciliten la vida de las personas.",
+    "supTitulo": "VALOR PROFESIONAL",
+    "Valor": "Programar constantemente me mantiene actualizado y me ha enseñado la importancia del aprendizaje autodidacta. Cada proyecto personal es un laboratorio donde experimento, fallo y mejoro, desarrollando la perseverancia y la capacidad de resolver problemas de forma creativa."
+ },
+    "Bienvenida": {
+    "Titulo": "Hobbies",
+    "Presentacion": "La vida profesional en tecnología exige constante aprendizaje, pero son mis intereses personales los que mantienen viva la chispa creativa."
+ }
+
+}

@@ -22,8 +22,7 @@ const corsConfig = {
     const ok = allowedOrigins.has(origin) || netlifyPreview.test(origin);
     return ok ? cb(null, true) : cb(null, false);
   },
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type"],
+  methods: ["GET", "POST", "HEAD", "OPTIONS"],
   optionsSuccessStatus: 204
 };
 

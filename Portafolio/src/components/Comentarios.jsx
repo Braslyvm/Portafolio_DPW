@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
-
+import { useEffect, useState } from "react";
 
 const MAX_LEN = 500;
+const API_BASE = "https://portafoliodpw-production.up.railway.app";
 
 function formatoFechaES(iso) {
   const d = new Date(iso);
@@ -19,60 +19,67 @@ export default function RecommendationPage() {
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState("");
 
-useEffect(() => {
-  (async () => {
+  useEffect(() => {
+    (async () => {
+      try {
+        setCargando(true);
+        setError("");
+        const res = await fetch(`${API_BASE}/comentarios`, { method: "GET" });
+        if (!res.ok) throw new Error("Error HTTP " + res.status);
+        const payload = await res.json();
+        const lista = Array.isArray(payload?.data) ? payload.data : (Array.isArray(payload) ? payload : []);
+        setComentarios(lista);
+      } catch (err) {
+        console.error(err);
+        setError("No se pudieron cargar las recomendaciones.");
+      } finally {
+        setCargando(false);
+      }
+    })();
+  }, []);
+
+  const puedeEnviar =
+    nombre.trim().length > 1 &&
+    comentario.trim().length > 3 &&
+    comentario.length <= MAX_LEN &&
+    !cargando;
+
+  const enviar = async (e) => {
+    e.preventDefault();
+    if (!puedeEnviar) return;
+
+    const body = {
+      nombre: nombre.trim(),
+      comentario: comentario.trim(),
+      // 'fecha' la pone la DB (DEFAULT now())
+    };
+
     try {
       setCargando(true);
       setError("");
 
-      const res = await fetch("http://https://portafoliodpw-production.up.railway.app/comentarios");
+      const res = await fetch(`${API_BASE}/comentarios`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
       if (!res.ok) throw new Error("Error HTTP " + res.status);
 
-      const data = await res.json();
-      setComentarios(Array.isArray(data) ? data : []);
+      // Recargar lista después del insert (para traer fecha desde la DB)
+      const r2 = await fetch(`${API_BASE}/comentarios`);
+      const payload2 = await r2.json();
+      const lista = Array.isArray(payload2?.data) ? payload2.data : [];
+      setComentarios(lista);
+
+      setNombre("");
+      setComentario("");
     } catch (err) {
       console.error(err);
+      setError("No se pudo enviar tu recomendación.");
     } finally {
       setCargando(false);
     }
-  })();
-}, []);
-
-
-const puedeEnviar =
-  nombre.trim().length > 1 &&
-  comentario.trim().length > 3 &&
-  comentario.length <= MAX_LEN &&
-  !cargando;
-
-const enviar = async (e) => {
-  e.preventDefault();
-  if (!puedeEnviar) return;
-
-  const nuevo = {
-    Nombre: nombre.trim(),
-    Comentario: comentario.trim(),
-    fecha: new Date().toISOString().slice(0, 10),
   };
-
-  try {
-    setCargando(true);
-    setError("");
-
-    const res = await fetch("https://portafoliodpw-production.up.railway.app/comentarios", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(nuevo),
-    });
-    setComentarios((prev) => [nuevo, ...prev]);
-    setNombre("");
-    setComentario("");
-  } catch (err) {
-    console.error(err);
-  } finally {
-    setCargando(false);
-  }
-};
 
   return (
     <main className="content">
@@ -116,32 +123,36 @@ const enviar = async (e) => {
             {error && <div className="mensaje-error">{error}</div>}
           </form>
         </section>
+
         <section className="lista-recomendaciones">
           <div className="encabezado-lista">
             <h2>Recomendaciones recibidas</h2>
             <span className="insignia">{comentarios.length}</span>
           </div>
+
           {cargando && comentarios.length === 0 && (
             <p className="bloque-vacio">Cargando…</p>
           )}
-          {!cargando && comentarios.length === 0 && (
+
+          {!cargando && comentarios.length === 0 && !error && (
             <div className="bloque-vacio">
               <div className="icono-vacio">💬</div>
               <p>Aún no hay recomendaciones. ¡Sé el primero en dejar una!</p>
             </div>
           )}
+
           <ul className="lista">
             {comentarios.map((c, i) => (
               <li key={i} className="item">
                 <div className="avatar">
-                  {c.Nombre?.[0]?.toUpperCase() ?? "?"}
+                  {(c.nombre?.[0] || c.Nombre?.[0] || "?").toUpperCase()}
                 </div>
                 <div className="cuerpo-item">
                   <div className="fila-superior">
-                    <strong>{c.Nombre}</strong>
+                    <strong>{c.nombre ?? c.Nombre}</strong>
                     <span className="fecha">{formatoFechaES(c.fecha)}</span>
                   </div>
-                  <p>{c.Comentario}</p>
+                  <p>{c.comentario ?? c.Comentario}</p>
                 </div>
               </li>
             ))}

@@ -17,9 +17,9 @@ const allowedOrigins = new Set([
 app.use(
   cors({
     origin: (origin, cb) => {
-      if (!origin) return cb(null, true); // permite peticiones directas (curl/Postman)
+      if (!origin) return cb(null, true); 
       const ok =
-        allowedOrigins.has(origin) || origin.endsWith(".netlify.app"); // permite previews de Netlify
+        allowedOrigins.has(origin) || origin.endsWith(".netlify.app"); 
       return ok ? cb(null, true) : cb(new Error("Not allowed by CORS"));
     },
     methods: ["GET", "POST", "OPTIONS"],

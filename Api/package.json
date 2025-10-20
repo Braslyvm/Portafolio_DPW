@@ -10,7 +10,7 @@
     "build": "echo \"no build step\""
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.75.1",

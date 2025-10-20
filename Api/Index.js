@@ -44,7 +44,9 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
   auth: { persistSession: false }
 });
 
+app.get("/", (_req, res) => res.type("text").send("ok"));
 app.get("/healthz", (_req, res) => res.json({ ok: true }));
+app.head("/healthz", (_req, res) => res.sendStatus(200));
 
 app.get("/comentarios", async (req, res) => {
   try {

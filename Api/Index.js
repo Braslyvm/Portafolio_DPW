@@ -12,20 +12,26 @@ const app = express();
 /* ===== CORS ===== */
 const allowedOrigins = new Set([
   "http://localhost:5173",
+  "http://localhost:4173",      
   "https://miportafoliobvm.netlify.app",
+
 ]);
-app.use(
-  cors({
-    origin: (origin, cb) => {
-      if (!origin) return cb(null, true); 
-      const ok =
-        allowedOrigins.has(origin) || origin.endsWith(".netlify.app"); 
-      return ok ? cb(null, true) : cb(new Error("Not allowed by CORS"));
-    },
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+
+const netlifyPreview = /^https:\/\/[a-z0-9-]+\.netlify\.app$/i;
+
+const corsConfig = {
+  origin: (origin, cb) => {
+    if (!origin) return cb(null, true); 
+    const ok = allowedOrigins.has(origin) || netlifyPreview.test(origin);
+    return ok ? cb(null, true) : cb(null, false);
+  },
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
+  optionsSuccessStatus: 204, 
+};
+
+app.use(cors(corsConfig));
+app.options("*", cors(corsConfig));
 
 app.use(express.json());
 
@@ -41,11 +47,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
 });
 
 /* ===== RUTAS ===== */
-
-// Healthcheck
 app.get("/healthz", (_req, res) => res.json({ ok: true }));
-
-// GET /comentarios?page=&limit=
 app.get("/comentarios", async (req, res) => {
   try {
     const page = Math.max(parseInt(req.query.page || "1", 10), 1);
@@ -67,7 +69,6 @@ app.get("/comentarios", async (req, res) => {
   }
 });
 
-// POST /comentarios  { nombre, comentario }
 app.post("/comentarios", async (req, res) => {
   try {
     const { nombre, comentario } = req.body || {};
@@ -80,7 +81,6 @@ app.post("/comentarios", async (req, res) => {
     const nuevo = {
       nombre: String(nombre).trim(),
       comentario: String(comentario).trim(),
-      // 'fecha' la pone la DB automáticamente con now()
     };
 
     const { error } = await supabase.from("comentarios").insert(nuevo);
@@ -93,11 +93,9 @@ app.post("/comentarios", async (req, res) => {
   }
 });
 
-// 404 genérico
 app.use((_req, res) => res.status(404).json({ error: "Ruta no encontrada" }));
 
-/* ===== START ===== */
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(` corriendo en http://localhost:${PORT}`);
 });

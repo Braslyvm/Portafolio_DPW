@@ -25,7 +25,7 @@ useEffect(() => {
       setCargando(true);
       setError("");
 
-      const res = await fetch("http://localhost:3000/comentarios");
+      const res = await fetch("http://https://portafoliodpw-production.up.railway.app/comentarios");
       if (!res.ok) throw new Error("Error HTTP " + res.status);
 
       const data = await res.json();
@@ -59,7 +59,7 @@ const enviar = async (e) => {
     setCargando(true);
     setError("");
 
-    const res = await fetch("http://localhost:3000/comentarios", {
+    const res = await fetch("https://portafoliodpw-production.up.railway.app/comentarios", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(nuevo),

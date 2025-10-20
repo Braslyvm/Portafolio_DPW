@@ -1,4 +1,3 @@
-// index.js (ESM)
 import express from "express";
 import fs from "fs";
 import path from "path";
@@ -9,7 +8,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = ["http://localhost:5173", "https://miportafoliobvm.netlify.app"];
 
@@ -51,6 +49,7 @@ app.post("/comentarios", (req, res) => {
 
 app.use((req, res) => res.status(404).json({ error: "Ruta no encontrada" }));
 
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server on http://0.0.0.0:${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

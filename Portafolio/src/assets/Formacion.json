@@ -1,0 +1,49 @@
+{
+  "Formacion": {
+    "Titulo": "Formación Académica Técnica",
+    "Subtitulo": "Competencias desarrolladas durante mi formación universitaria en Ingeniería de Sistemas, con enfoque en tecnologías modernas y prácticas profesionales de la industria."
+  },
+
+  "BasesDatos": {
+    "Titulo": "Bases de Datos y SQL",
+    "Descripcion": "Diseño, modelado y gestión de bases de datos relacionales con PostgreSQL y MySQL.",
+    "Item1": "Consultas complejas SQL",
+    "Item2": "Normalización de bases de datos",
+    "Item3": "Optimización de queries",
+    "Item4": "Triggers y procedimientos almacenados"
+  },
+
+  "Frontend": {
+    "Titulo": "Desarrollo Web Frontend",
+    "Descripcion": "Creación de interfaces modernas, responsivas y accesibles para aplicaciones web.",
+    "Item1": "HTML5 semántico",
+    "Item2": "JavaScript",
+    "Item3": "React y TypeScript"
+  },
+
+  "Backend": {
+    "Titulo": "Backend y APIs",
+    "Descripcion": "Desarrollo de servicios backend robustos y APIs escalables para aplicaciones empresariales.",
+    "Item1": "Node.js y Express",
+    "Item2": "Autenticación JWT",
+    "Item3": "APIs RESTful",
+    "Item4": "Integración de servicios"
+  },
+
+  "Lenguajes": {
+    "Titulo": "Lenguajes y Paradigmas",
+    "Descripcion": "Dominio de múltiples lenguajes con enfoque en programación orientada a objetos y funcional.",
+    "Item1": "Python",
+    "Item2": "JavaScript / TypeScript",
+    "Item3": "Java",
+    "Item4": "Programación funcional"
+  },
+
+  "Herramientas": {
+    "Titulo": "Herramientas Tecnológicas",
+    "Descripcion": "Uso profesional de herramientas modernas para proyectos colaborativos.",
+    "Item1": "Git y GitHub",
+    "Item2": "Docker y contenedores",
+    "Item3": "Testing (Pytest)"
+  }
+}

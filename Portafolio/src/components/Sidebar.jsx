@@ -1,6 +1,7 @@
 import React from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { FaBook, FaUser, FaBars, FaHome, FaRegComments } from "react-icons/fa";
+import { FaBook, FaUser, FaBars, FaHome, FaRegComments,FaUserGraduate } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
 import { MdOutlineSportsEsports } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
@@ -28,7 +29,8 @@ export default function Sidebar({ collapsed, setCollapsed }) {
           <MenuItem icon={<FaBook />}><Link to="/cursos">Cursos</Link></MenuItem>
           <MenuItem icon={<FaRegComments />}><Link to="/Comentarios">Comentarios</Link></MenuItem>
           <MenuItem icon={<MdOutlineSportsEsports />}><Link to="/hobbies">Hobbies</Link></MenuItem>
-          <MenuItem icon={<FaBook />}><Link to="/reflexiones">Reflexiones</Link></MenuItem>
+          <MenuItem icon={<GiBrain />}><Link to="/reflexiones">Reflexiones</Link></MenuItem>
+          <MenuItem icon={<FaUserGraduate />}><Link to="/formacion">Formación</Link></MenuItem>
         </Menu>
       </ProSidebar>
 

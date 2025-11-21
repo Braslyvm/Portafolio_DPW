@@ -152,7 +152,7 @@
   padding: 0;
   display: grid;
   gap: 10px;
-  max-height: 250px; 
+  max-height: 38vh; 
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 6px;

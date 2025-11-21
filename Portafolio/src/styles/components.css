@@ -327,13 +327,12 @@
   .hobbies-espaciador { height: 6px; }
 }
 
-/* Página de la sección */
+
 .seccion-page {
-  background-color: #ffffff;          /* fondo blanco como la imagen */
+  background-color: #ffffff;         
   padding: 40px 0;
 }
 
-/* Contenedor centrado (igual ancho que la imagen) */
 .seccion-wrapper {
   max-width: 1100px;
   margin: 0 auto;
@@ -342,7 +341,7 @@
   color: var(--text-dark);
 }
 
-/* TÍTULO PRINCIPAL */
+
 .seccion-titulo-principal {
   text-align: center;
   font-size: 2.6rem;
@@ -354,20 +353,20 @@
 .seccion-subtitulo {
   text-align: center;
   font-size: 1.05rem;
-  color: #6b7280; /* gris suave como en la UI original */
+  color: #6b7280; 
   margin-bottom: 40px;
 }
 
-/* BLOQUES */
+
 .seccion-bloque {
-  background-color: #f5f6f8; /* gris claro tipo card */
+  background-color: #f5f6f8;
   border-radius: 14px;
   padding: 24px 28px;
   margin-bottom: 32px;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
 }
 
-/* HEADER DE CADA BLOQUE (icono + título) */
+
 .seccion-header {
   display: flex;
   align-items: center;
@@ -404,7 +403,7 @@
   color: var(--text-dark);
 }
 
-/* FORTALEZAS */
+
 .seccion-grid-fortalezas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -429,7 +428,7 @@
   color: var(--accent);
 }
 
-/* RETOS */
+
 .seccion-reto {
   margin-bottom: 18px;
 }
@@ -447,7 +446,7 @@
   line-height: 1.5;
 }
 
-/* OBJETIVOS */
+
 .seccion-grid-objetivos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -564,6 +563,11 @@
     font-size: 0.85rem;
     line-height: 1.4;
   }
+  .Sup-contenedor {
+
+  height: 90vh;
+}
+
 
 }
 

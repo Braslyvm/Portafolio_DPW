@@ -25,10 +25,6 @@ export default function MainContent() {
               </p>
             </div>
           </section>
-
-          <div className="intro-image">
-            <img src={BraslyImage} alt="Brasly" />
-          </div>
         </div>
         <section className="purpose-section">
           <h2 className="section-title">{Bienvenida.TituloProposito}</h2>

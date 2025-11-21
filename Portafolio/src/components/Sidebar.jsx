@@ -26,10 +26,9 @@ export default function Sidebar({ collapsed, setCollapsed }) {
           <MenuItem icon={<FaHome />}><Link to="/">Inicio</Link></MenuItem>
           <MenuItem icon={<FaUser />}><Link to="/perfil">Perfil</Link></MenuItem>
           <MenuItem icon={<FaBook />}><Link to="/cursos">Cursos</Link></MenuItem>
-          <MenuItem icon={<FaRegComments />}>
-            <Link to="/Comentarios">Comentarios</Link>
-          </MenuItem>
+          <MenuItem icon={<FaRegComments />}><Link to="/Comentarios">Comentarios</Link></MenuItem>
           <MenuItem icon={<MdOutlineSportsEsports />}><Link to="/hobbies">Hobbies</Link></MenuItem>
+          <MenuItem icon={<FaBook />}><Link to="/reflexiones">Reflexiones</Link></MenuItem>
         </Menu>
       </ProSidebar>
 

@@ -8,6 +8,7 @@ import Cursos from "./components/Cursos";
 import DetallesCurso from "./components/DetallesCurso";
 import Comentarios from "./components/Comentarios";
 import Hobby from "./components/Hobby";
+import Reflexiones from "./components/Reflexion";
 import "./styles/base.css";
 import "./styles/layout.css";
 import "./styles/overrides.css";
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/Comentarios" element={<Comentarios />} />
               <Route path="/hobbies" element={<Hobby />} />
               <Route path="/curso/:codigo" element={<DetallesCurso />} />
+              <Route path="/reflexiones" element={<Reflexiones />} />
             </Routes>
           </div>
         </div>

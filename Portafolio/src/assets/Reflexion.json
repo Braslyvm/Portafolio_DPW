@@ -1,0 +1,29 @@
+{
+  "fortalezas": {
+    "Titulo": "Mis Fortalezas Académicas",
+    "carta1": "Trabajo de manera colaborativa",
+    "carta2": "Me adapto a nuevas tecnologías",
+    "carta3": "Apasionado por aprender cosas innovadoras",
+    "carta4": "Capacidad de análisis crítico"
+  },
+  "retos": {
+    "Titulo": "Mis Retos y Cómo los Superé",
+    "Titulo2": "Trabajar en equipo",
+    "cuerpo1": "Al iniciar proyectos grupales en la universidad había muchos problemas por la comunicación o por no tener claro quién hizo cada cosa. Decidí implementar la metodología Canvas. Entonces, cada vez que inicio un proyecto me gusta generar un tablero con los requerimientos; así es más fácil saber qué se ha hecho, qué falta y qué tareas fueron realizadas por cada integrante del equipo.",
+    "Titulo3": "Dificultad para entender múltiples paradigmas de programación",
+    "cuerpo2": "Recientemente tuve dificultades para entender los conceptos de programación funcional y orientada a objetos. Para superar este reto, dediqué tiempo adicional a estudiar ejemplos prácticos y a realizar ejercicios específicos para cada paradigma. Con bastante práctica aprendí Prolog, Haskell y logré comprender mejor estos conceptos y aplicarlos en mis proyectos académicos."
+  },
+  "Objetivos": {
+    "Titulo": "Mis Objetivos a Corto Plazo",
+    "carta1": "Dominar nuevas tecnologías como React y Next.js",
+    "carta2": "Crear una página web para el emprendimiento familiar y aplicar todo lo aprendido",
+    "carta3": "Aprender más sobre bases de datos y profundizar en Integration Services",
+    "carta4": "Mejorar más mi inglés",
+    "carta5": "Aprender sobre ciberseguridad",
+    "carta6": "Finalizar mi carrera y adquirir conocimientos en diferentes tecnologías y áreas de la programación"
+  },
+  "Bienvenida": {
+    "Titulo": "Reflexión Personal y Desarrollo Profesional",
+    "Presentacion": "Mi camino de crecimiento académico y profesional, mis fortalezas, retos y cómo los superé, y mis objetivos a corto plazo."
+  }
+}

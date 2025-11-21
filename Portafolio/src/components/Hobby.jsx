@@ -32,7 +32,6 @@ export default function HobbiesIntereses() {
               />
               <div className="hobbies-marcaagua">1</div>
             </div>
-
             <div className="hobbies-cuerpo">
               <div className="hobbies-insignia" aria-hidden>🎯</div>
               <h2 className="hobbies-h2">{dep?.Titulo || "Deportes de Equipo"}</h2>

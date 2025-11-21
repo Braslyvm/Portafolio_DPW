@@ -31,7 +31,7 @@ app.use(express.json());
 const { SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY } = process.env;
 let supabase = null;
 if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-  console.error("⚠️ Faltan SUPABASE_URL o SUPABASE_SERVICE_ROLE_KEY (la app arrancará sin DB)");
+  console.error("Faltan SUPABASE_URL o SUPABASE_SERVICE_ROLE_KEY (la app arrancará sin DB)");
 } else {
   supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
     auth: { persistSession: false }

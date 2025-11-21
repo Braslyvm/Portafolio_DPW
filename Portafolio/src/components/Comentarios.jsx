@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const MAX_LEN = 500;
-const API_BASE = "https://portafoliodpw-production.up.railway.app";
+const API_BASE = "https://portafoliodpw.up.railway.app";
 
 function formatoFechaES(iso) {
   const d = new Date(iso);
@@ -51,7 +51,6 @@ export default function RecommendationPage() {
     const body = {
       nombre: nombre.trim(),
       comentario: comentario.trim(),
-      // 'fecha' la pone la DB (DEFAULT now())
     };
 
     try {
@@ -64,8 +63,6 @@ export default function RecommendationPage() {
         body: JSON.stringify(body),
       });
       if (!res.ok) throw new Error("Error HTTP " + res.status);
-
-      // Recargar lista después del insert (para traer fecha desde la DB)
       const r2 = await fetch(`${API_BASE}/comentarios`);
       const payload2 = await r2.json();
       const lista = Array.isArray(payload2?.data) ? payload2.data : [];
